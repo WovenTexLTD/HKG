@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --charcoal: #2D3436;
+  --slate: #3D4F5F;
+  --red: #E74C3C;
+  --red-dark: #C0392B;
+  --white: #FFFFFF;
+  --off-white: #F5F6FA;
+  --light-grey: #DFE6E9;
+  --mid-grey: #636E72;
+  --dark-bg: #1A2028;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: var(--charcoal);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography utilities */
+.font-display {
+  letter-spacing: -0.02em;
+}
+
+/* Section utilities */
+.section-padding {
+  padding: 5rem 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--charcoal);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 3px;
+}
+
+/* Smooth image placeholder */
+.img-placeholder {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2D3436 0%, #3D4F5F 100%);
+}
+
+.img-placeholder::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}

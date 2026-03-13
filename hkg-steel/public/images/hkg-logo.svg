@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 130" role="img" aria-label="HKG Steel Mills Ltd">
+  <g transform="translate(63,65)">
+    <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#D42020" transform="rotate(-45)"/>
+    <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C41818" transform="rotate(45)"/>
+    <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#D42020" transform="rotate(135)"/>
+    <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C41818" transform="rotate(225)"/>
+    <polygon points="0,-23 10,-10 23,0 10,10 0,23 -10,10 -23,0 -10,-10" fill="white"/>
+    <circle cx="0" cy="0" r="6" fill="white"/>
+  </g>
+  <text
+    x="140" y="98"
+    font-family="'Arial Black','Franklin Gothic Heavy','Impact',sans-serif"
+    font-weight="900"
+    font-size="86"
+    fill="#111111"
+    letter-spacing="-2"
+  >HKGSTEEL</text>
+</svg>
