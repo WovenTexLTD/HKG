@@ -104,7 +104,7 @@ export default function HomePage() {
           style={{
             maxWidth: "860px",
             margin: "0 auto",
-            padding: "7rem 1.5rem 8rem",
+            padding: "clamp(3rem, 8vw, 7rem) 1.25rem clamp(4rem, 9vw, 8rem)",
             width: "100%",
             position: "relative",
             zIndex: 1,
@@ -124,7 +124,7 @@ export default function HomePage() {
               border: "1px solid rgba(231,76,60,0.3)",
               borderRadius: "100px",
               padding: "0.5rem 1.4rem",
-              marginBottom: "3rem",
+              marginBottom: "clamp(1rem, 4vw, 3rem)",
             }}
           >
             <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#E74C3C", flexShrink: 0 }} />
@@ -134,13 +134,13 @@ export default function HomePage() {
           </div>
 
           {/* Logo — white-text SVG for dark hero background */}
-          <div className="hero-logo-wrap" style={{ marginBottom: "3.5rem", display: "inline-block" }}>
+          <div className="hero-logo-wrap" style={{ marginBottom: "clamp(1.5rem, 4vw, 3.5rem)", display: "inline-block" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/hkg-logo-white.svg"
               alt="HKG Steel Mills Ltd"
               className="hero-logo"
-              style={{ display: "block", height: "auto", width: "clamp(300px, 48vw, 620px)" }}
+              style={{ display: "block", height: "auto", width: "clamp(260px, 85vw, 620px)" }}
             />
           </div>
 
