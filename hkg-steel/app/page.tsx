@@ -120,27 +120,27 @@ export default function HomePage() {
           }}
         >
           {/* Logo — inline JSX for reliable centering */}
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "clamp(0.75rem, 2vw, 1.25rem)", marginBottom: "clamp(1.5rem, 4vw, 3.5rem)" }}>
-            {/* Symbol mark */}
-            <svg width="clamp(52px, 12vw, 80px)" height="clamp(52px, 12vw, 80px)" viewBox="0 0 126 126" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-              <g transform="translate(63,63)">
-                <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#E74C3C" transform="rotate(-45)"/>
-                <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C0392B" transform="rotate(45)"/>
-                <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#E74C3C" transform="rotate(135)"/>
-                <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C0392B" transform="rotate(225)"/>
-                <polygon points="0,-23 10,-10 23,0 10,10 0,23 -10,10 -23,0 -10,-10" fill="#1A2028"/>
-                <circle cx="0" cy="0" r="6" fill="#1A2028"/>
-              </g>
-            </svg>
-            {/* Wordmark */}
-            <div style={{ textAlign: "left", lineHeight: 1 }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "clamp(1.5rem, 4vw, 3.5rem)" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "clamp(0.75rem, 2vw, 1.25rem)" }}>
+              {/* Symbol mark */}
+              <svg width="clamp(52px, 12vw, 80px)" height="clamp(52px, 12vw, 80px)" viewBox="0 0 126 126" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+                <g transform="translate(63,63)">
+                  <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#E74C3C" transform="rotate(-45)"/>
+                  <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C0392B" transform="rotate(45)"/>
+                  <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#E74C3C" transform="rotate(135)"/>
+                  <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C0392B" transform="rotate(225)"/>
+                  <polygon points="0,-23 10,-10 23,0 10,10 0,23 -10,10 -23,0 -10,-10" fill="#1A2028"/>
+                  <circle cx="0" cy="0" r="6" fill="#1A2028"/>
+                </g>
+              </svg>
+              {/* Wordmark */}
               <div style={{ fontSize: "clamp(2.4rem, 10vw, 5.5rem)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1, fontFamily: "'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif" }}>
                 <span style={{ color: "#FFFFFF" }}>HKG</span>
                 <span style={{ color: "#E74C3C" }}> STEEL</span>
               </div>
-              <div style={{ fontSize: "clamp(0.55rem, 1.4vw, 0.75rem)", color: "rgba(255,255,255,0.45)", letterSpacing: "0.25em", textTransform: "uppercase", marginTop: "0.2rem" }}>
-                Mills Ltd
-              </div>
+            </div>
+            <div style={{ fontSize: "clamp(0.55rem, 1.4vw, 0.8rem)", color: "rgba(255,255,255,0.45)", letterSpacing: "0.3em", textTransform: "uppercase", marginTop: "0.35rem" }}>
+              Mills Ltd
             </div>
           </div>
 
