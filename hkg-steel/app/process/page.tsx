@@ -227,7 +227,7 @@ export default function ProcessPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/factory-hot-rolling.jpg"
+              src="/images/factory-process-banner.jpg"
               alt="HKG Steel Mills — hot rolling mill with glowing red steel"
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />

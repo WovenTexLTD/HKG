@@ -271,7 +271,7 @@ export default function AboutPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/factory-furnace-melting.jpg"
+              src="/images/factory-about-banner.jpg"
               alt="HKG Steel Mills — induction furnace and scrap melting facility"
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />
