@@ -258,28 +258,24 @@ export default function AboutPage() {
         `}</style>
       </section>
 
-      {/* Facility Photo Placeholder */}
+      {/* Facility Photo */}
       <section style={{ padding: "0 1.5rem 6rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div
             style={{
               aspectRatio: "16/5",
-              background: "linear-gradient(135deg, #1A2028 0%, #3D4F5F 50%, #2D3436 100%)",
               borderRadius: "12px",
               overflow: "hidden",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              gap: "0.75rem",
               position: "relative",
             }}
           >
-            <Factory size={64} style={{ color: "rgba(255,255,255,0.12)" }} />
-            <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.8rem", textAlign: "center", fontStyle: "italic" }}>
-              [PLACEHOLDER: Replace with aerial or wide-angle photo of HKG Steel Mills factory, Mridhakandi, Sonargaon]
-            </p>
-            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.6)", padding: "0.75rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/factory-furnace-melting.jpg"
+              alt="HKG Steel Mills — induction furnace and scrap melting facility"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.55)", padding: "0.75rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span style={{ fontSize: "0.875rem", fontWeight: 600, color: "#FFFFFF" }}>HKG Steel Mills — Mridhakandi Plant, Sonargaon, Narayangonj</span>
               <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.5)" }}>Established 2013</span>
             </div>

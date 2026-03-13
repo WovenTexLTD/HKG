@@ -220,21 +220,18 @@ export default function ProcessPage() {
           <div
             style={{
               aspectRatio: "21/6",
-              background: "linear-gradient(90deg, #1A2028 0%, #2D3436 40%, #E74C3C 100%)",
               borderRadius: "12px",
               overflow: "hidden",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              gap: "0.75rem",
               position: "relative",
             }}
           >
-            <Flame size={64} style={{ color: "rgba(255,255,255,0.12)" }} />
-            <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.8rem", textAlign: "center", fontStyle: "italic" }}>
-              [PLACEHOLDER: Rolling mill, induction furnace, or CCM casting line photo]
-            </p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/factory-hot-rolling.jpg"
+              alt="HKG Steel Mills — hot rolling mill with glowing red steel"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(26,32,40,0.5) 0%, transparent 60%)" }} />
           </div>
         </div>
       </section>

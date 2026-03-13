@@ -366,35 +366,33 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* Image placeholder */}
+            {/* Factory photo */}
             <div>
               <div
                 style={{
                   aspectRatio: "4/3",
-                  background: "linear-gradient(135deg, #2D3436 0%, #3D4F5F 60%, #2D3436 100%)",
                   borderRadius: "12px",
                   position: "relative",
                   overflow: "hidden",
                   border: "1px solid #DFE6E9",
                 }}
               >
-                {/* Simulated industrial lines */}
-                <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "0.75rem", padding: "2rem" }}>
-                  <Factory size={56} style={{ color: "rgba(255,255,255,0.15)" }} />
-                  <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.75rem", textAlign: "center", fontStyle: "italic", lineHeight: 1.5 }}>
-                    [PLACEHOLDER: Replace with actual HKG factory / aerial facility photo]
-                  </p>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/factory-rebar-floor.jpg"
+                  alt="HKG Steel Mills factory floor — rebar production"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                />
                 <div
                   style={{
                     position: "absolute",
                     bottom: 0,
                     left: 0,
                     right: 0,
-                    background: "rgba(0,0,0,0.6)",
+                    background: "rgba(0,0,0,0.55)",
                     padding: "0.75rem 1rem",
                     fontSize: "0.75rem",
-                    color: "rgba(255,255,255,0.6)",
+                    color: "rgba(255,255,255,0.75)",
                     fontStyle: "italic",
                   }}
                 >

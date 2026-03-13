@@ -85,11 +85,13 @@ export default function ProductsPage() {
                 overflow: "hidden",
               }}
             >
-              <Layers size={56} style={{ color: "rgba(255,255,255,0.15)" }} />
-              <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "0.75rem", textAlign: "center", fontStyle: "italic", padding: "0 1.5rem" }}>
-                [PLACEHOLDER: Steel billets from CCM line or billet storage area]
-              </p>
-              <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.65)", padding: "0.6rem 1rem", fontSize: "0.75rem", color: "rgba(255,255,255,0.6)", fontStyle: "italic" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/factory-wire-coiling.jpg"
+                alt="HKG Steel Mills — wire rod coiling and finishing"
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }}
+              />
+              <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.65)", padding: "0.6rem 1rem", fontSize: "0.75rem", color: "rgba(255,255,255,0.75)", fontStyle: "italic" }}>
                 HKG Steel Billets — Continuous Casting Line
               </div>
             </div>
@@ -234,11 +236,13 @@ export default function ProductsPage() {
                 overflow: "hidden",
               }}
             >
-              <Building2 size={56} style={{ color: "rgba(255,255,255,0.15)" }} />
-              <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "0.75rem", textAlign: "center", fontStyle: "italic", padding: "0 1.5rem" }}>
-                [PLACEHOLDER: Bundled deformed bars, hot rolling line, or finished rod stack]
-              </p>
-              <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.65)", padding: "0.6rem 1rem", fontSize: "0.75rem", color: "rgba(255,255,255,0.6)", fontStyle: "italic" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/factory-rebar-floor.jpg"
+                alt="HKG Steel Mills — deformed bar (rebar) on rolling mill floor"
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }}
+              />
+              <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.65)", padding: "0.6rem 1rem", fontSize: "0.75rem", color: "rgba(255,255,255,0.75)", fontStyle: "italic" }}>
                 HKG Deformed Bar (Rebar) — 8mm to 32mm
               </div>
             </div>
