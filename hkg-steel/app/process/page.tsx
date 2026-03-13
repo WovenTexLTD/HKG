@@ -229,7 +229,7 @@ export default function ProcessPage() {
             <img
               src="/images/factory-process-banner.jpg"
               alt="HKG Steel Mills — hot rolling mill with glowing red steel"
-              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.12)", transformOrigin: "center" }}
             />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(26,32,40,0.5) 0%, transparent 60%)" }} />
           </div>

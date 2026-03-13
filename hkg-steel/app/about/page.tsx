@@ -273,7 +273,7 @@ export default function AboutPage() {
             <img
               src="/images/factory-about-banner.jpg"
               alt="HKG Steel Mills — induction furnace and scrap melting facility"
-              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.12)", transformOrigin: "center" }}
             />
             <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.55)", padding: "0.75rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span style={{ fontSize: "0.875rem", fontWeight: 600, color: "#FFFFFF" }}>HKG Steel Mills — Mridhakandi Plant, Sonargaon, Narayangonj</span>

@@ -375,7 +375,7 @@ export default function HomePage() {
                 <img
                   src="/images/factory-rebar-floor.jpg"
                   alt="HKG Steel Mills factory floor — rebar production"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.12)", transformOrigin: "center" }}
                 />
                 <div
                   style={{
