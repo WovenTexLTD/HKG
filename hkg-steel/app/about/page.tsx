@@ -33,6 +33,8 @@ export default function AboutPage() {
           overflow: "hidden",
         }}
       >
+        {/* Dark overlay */}
+        <div style={{ position: "absolute", inset: 0, background: "rgba(15, 20, 28, 0.72)", zIndex: 0 }} />
         <div style={{ position: "absolute", top: 0, right: 0, width: "40%", height: "100%", background: "radial-gradient(ellipse at right, rgba(231,76,60,0.08), transparent 70%)", pointerEvents: "none" }} />
         <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "1rem" }}>
@@ -41,7 +43,7 @@ export default function AboutPage() {
           <h1 style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)", fontWeight: 900, color: "#FFFFFF", letterSpacing: "-0.03em", lineHeight: 1.05, maxWidth: "700px" }}>
             About HKG Steel Mills Ltd
           </h1>
-          <p style={{ fontSize: "1.0625rem", color: "#1A2028", marginTop: "1.25rem", maxWidth: "600px", lineHeight: 1.75 }}>
+          <p style={{ fontSize: "1.0625rem", color: "#8A9BA6", marginTop: "1.25rem", maxWidth: "600px", lineHeight: 1.75 }}>
             An established, operating steel manufacturer with state-of-the-art facilities, rigorous quality standards, and a proven track record across Bangladesh.
           </p>
         </div>
