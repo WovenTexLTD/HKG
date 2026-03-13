@@ -114,7 +114,7 @@ export default function HomePage() {
           }}
         >
           {/* Logo — white-text SVG for dark hero background */}
-          <div className="hero-logo-wrap" style={{ marginBottom: "clamp(1.5rem, 4vw, 3.5rem)", display: "inline-block" }}>
+          <div className="hero-logo-wrap" style={{ marginBottom: "clamp(1.5rem, 4vw, 3.5rem)", display: "flex", justifyContent: "center", width: "100%" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/hkg-logo-white.svg"
