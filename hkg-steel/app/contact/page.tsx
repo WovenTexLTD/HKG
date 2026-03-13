@@ -37,7 +37,7 @@ export default function ContactPage() {
       {/* Page Header */}
       <section
         style={{
-          background: "linear-gradient(135deg, #1A2028 0%, #2D3436 100%)",
+          backgroundImage: "url('/images/header.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",
           paddingTop: "calc(70px + 5rem)",
           paddingBottom: "5rem",
           paddingLeft: "1.5rem",
@@ -46,6 +46,8 @@ export default function ContactPage() {
           overflow: "hidden",
         }}
       >
+        {/* Dark overlay */}
+        <div style={{ position: "absolute", inset: 0, background: "rgba(15, 20, 28, 0.72)", zIndex: 0 }} />
         <div style={{ position: "absolute", top: 0, right: 0, width: "40%", height: "100%", background: "radial-gradient(ellipse at right, rgba(231,76,60,0.08), transparent 70%)", pointerEvents: "none" }} />
         <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "1rem" }}>
