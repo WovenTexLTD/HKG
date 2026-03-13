@@ -64,7 +64,10 @@ export default function HomePage() {
       <section
         style={{
           minHeight: "100vh",
-          background: "linear-gradient(160deg, #1A2028 0%, #2D3436 55%, #1E2D3D 100%)",
+          backgroundImage: "url('/images/hero (1).png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -74,6 +77,9 @@ export default function HomePage() {
           textAlign: "center",
         }}
       >
+        {/* Dark tint over hero image */}
+        <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.72)", zIndex: 0 }} />
+
         {/* Subtle diagonal texture */}
         <div
           style={{
@@ -114,15 +120,12 @@ export default function HomePage() {
           }}
         >
           {/* Logo — white-text SVG for dark hero background */}
-          <div className="hero-logo-wrap" style={{ marginBottom: "clamp(1.5rem, 4vw, 3.5rem)", display: "flex", justifyContent: "center", width: "100%" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/hkg-logo-white.svg"
-              alt="HKG Steel Mills Ltd"
-              className="hero-logo"
-              style={{ display: "block", height: "auto", width: "clamp(300px, 92vw, 700px)" }}
-            />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hkg-logo-white.svg"
+            alt="HKG Steel Mills Ltd"
+            style={{ display: "block", height: "auto", width: "clamp(280px, 88vw, 700px)", margin: "0 auto clamp(1.5rem, 4vw, 3.5rem)" }}
+          />
 
           {/* h1 for SEO — visually hidden, screen-reader accessible */}
           <h1 style={{ position: "absolute", width: "1px", height: "1px", overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap" }}>
@@ -145,7 +148,7 @@ export default function HomePage() {
           <p
             style={{
               fontSize: "clamp(1rem, 2vw, 1.25rem)",
-              color: "#8A9BA6",
+              color: "rgba(255,255,255,0.75)",
               fontStyle: "italic",
               fontWeight: 400,
               marginBottom: "2.5rem",
@@ -158,7 +161,7 @@ export default function HomePage() {
           <p
             style={{
               fontSize: "1.0625rem",
-              color: "#7A8D99",
+              color: "rgba(255,255,255,0.8)",
               maxWidth: "620px",
               lineHeight: 1.85,
               marginBottom: "3rem",
@@ -166,7 +169,7 @@ export default function HomePage() {
           >
             An established steel manufacturer operating from Sonargaon, Narayangonj. High-grade billets
             and deformed bars with a capacity exceeding{" "}
-            <strong style={{ color: "#C8D5DC", fontWeight: 600 }}>120,000 metric tonnes per year</strong>,
+            <strong style={{ color: "#FFFFFF", fontWeight: 700 }}>120,000 metric tonnes per year</strong>,
             supplying Bangladesh's most critical national infrastructure.
           </p>
 

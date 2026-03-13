@@ -122,9 +122,6 @@ body {
   .hero-logo-wrap {
     margin-bottom: 2rem !important;
   }
-  .hero-logo {
-    width: clamp(260px, 88vw, 500px) !important;
-  }
 
   /* Contact form: reduce padding on mobile */
   .contact-form-box {
