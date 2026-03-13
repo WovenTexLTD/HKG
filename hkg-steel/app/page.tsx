@@ -120,12 +120,14 @@ export default function HomePage() {
           }}
         >
           {/* Logo — white-text SVG for dark hero background */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/hkg-logo-white.svg"
-            alt="HKG Steel Mills Ltd"
-            style={{ display: "block", height: "auto", width: "clamp(280px, 88vw, 700px)", margin: "0 auto clamp(1.5rem, 4vw, 3.5rem)" }}
-          />
+          <div style={{ width: "100%", display: "flex", justifyContent: "center", marginBottom: "clamp(1.5rem, 4vw, 3.5rem)" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/hkg-logo-white.svg"
+              alt="HKG Steel Mills Ltd"
+              style={{ height: "auto", width: "clamp(280px, 88vw, 700px)", display: "block" }}
+            />
+          </div>
 
           {/* h1 for SEO — visually hidden, screen-reader accessible */}
           <h1 style={{ position: "absolute", width: "1px", height: "1px", overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap" }}>
