@@ -23,6 +23,7 @@ export default function AboutPage() {
     <>
       {/* Page Header */}
       <section
+        className="page-header"
         style={{
           backgroundImage: "url('/images/header.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",
           paddingTop: "calc(70px + 5rem)",
@@ -50,7 +51,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Overview */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="two-col-grid">
             <div>
@@ -181,7 +182,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "4rem" }}>
             <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "0.75rem" }}>
@@ -264,6 +265,7 @@ export default function AboutPage() {
       <section style={{ padding: "0 1.5rem 6rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div
+            className="about-facility-banner"
             style={{
               aspectRatio: "16/5",
               borderRadius: "12px",
@@ -277,7 +279,7 @@ export default function AboutPage() {
               alt="HKG Steel Mills — induction furnace and scrap melting facility"
               style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", transform: "scale(1.12)", transformOrigin: "center" }}
             />
-            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.55)", padding: "0.75rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div className="facility-caption" style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.55)", padding: "0.75rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span style={{ fontSize: "0.875rem", fontWeight: 600, color: "#FFFFFF" }}>HKG Steel Mills — Mridhakandi Plant, Sonargaon, Narayangonj</span>
               <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.5)" }}>Established 2013</span>
             </div>

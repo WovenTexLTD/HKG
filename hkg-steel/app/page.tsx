@@ -137,6 +137,7 @@ export default function HomePage() {
             <img
               src="/images/hkg-logo-white.svg"
               alt="HKG Steel Mills Ltd"
+              className="hero-logo"
               style={{ display: "block", height: "auto", width: "clamp(300px, 48vw, 620px)" }}
             />
           </div>
@@ -250,6 +251,7 @@ export default function HomePage() {
         }}
       >
         <div
+          className="home-stats-grid"
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
@@ -283,7 +285,7 @@ export default function HomePage() {
       </section>
 
       {/* ── ABOUT INTRO ── */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div
             style={{
@@ -404,7 +406,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PRODUCTS OVERVIEW ── */}
-      <section style={{ padding: "6rem 1.5rem", background: "#F5F6FA" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#F5F6FA" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "4rem" }}>
             <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "0.75rem" }}>
@@ -525,6 +527,7 @@ export default function HomePage() {
 
       {/* ── NOTABLE PROJECTS ── */}
       <section
+        className="s-pad"
         style={{
           padding: "6rem 1.5rem",
           background: "linear-gradient(135deg, #2D3436 0%, #1A2028 100%)",

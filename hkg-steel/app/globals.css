@@ -71,3 +71,74 @@ body {
   font-style: italic;
   letter-spacing: 0.05em;
 }
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+  /* Process stats: 4-col → 2×2 */
+  .process-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .process-stats-grid > div:nth-child(2) {
+    border-right: none !important;
+  }
+  .process-stats-grid > div:nth-child(3),
+  .process-stats-grid > div:nth-child(4) {
+    border-top: 1px solid #E8ECEF;
+  }
+
+  /* Wide banners: taller on mobile */
+  .wide-banner {
+    aspect-ratio: 16 / 7 !important;
+  }
+  .about-facility-banner {
+    aspect-ratio: 16 / 7 !important;
+  }
+
+  /* Performance metrics: 2-col on mobile */
+  .perf-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Reduce section padding on mobile */
+  .s-pad {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  /* Facility banner caption: stack on mobile */
+  .facility-caption {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.25rem !important;
+  }
+
+  /* Hero logo: smaller on tiny screens */
+  .hero-logo {
+    width: clamp(220px, 80vw, 500px) !important;
+  }
+
+  /* Contact form: reduce padding on mobile */
+  .contact-form-box {
+    padding: 1.75rem !important;
+  }
+
+  /* Page header: less top padding on mobile */
+  .page-header {
+    padding-top: calc(70px + 2.5rem) !important;
+    padding-bottom: 2.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Home stats bar: 2×2 */
+  .home-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .home-stats-grid > div:nth-child(2) {
+    border-right: none !important;
+  }
+  .home-stats-grid > div:nth-child(3),
+  .home-stats-grid > div:nth-child(4) {
+    border-top: 1px solid #E8ECEF;
+  }
+}

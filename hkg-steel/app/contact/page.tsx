@@ -36,6 +36,7 @@ export default function ContactPage() {
     <>
       {/* Page Header */}
       <section
+        className="page-header"
         style={{
           backgroundImage: "url('/images/header.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",
           paddingTop: "calc(70px + 5rem)",
@@ -63,7 +64,7 @@ export default function ContactPage() {
       </section>
 
       {/* Main contact section */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: "5rem", alignItems: "start" }} className="contact-grid">
             {/* Contact info */}
@@ -159,6 +160,7 @@ export default function ContactPage() {
 
             {/* Contact form */}
             <div
+              className="contact-form-box"
               style={{
                 background: "#FFFFFF",
                 border: "1px solid #E8ECEF",

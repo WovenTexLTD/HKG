@@ -61,6 +61,7 @@ export default function CertificationsPage() {
     <>
       {/* Page Header */}
       <section
+        className="page-header"
         style={{
           backgroundImage: "url('/images/header.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",
           paddingTop: "calc(70px + 5rem)",
@@ -115,7 +116,7 @@ export default function CertificationsPage() {
       </section>
 
       {/* Certifications detail cards */}
-      <section style={{ padding: "6rem 1.5rem", background: "#F5F6FA" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#F5F6FA" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "4rem" }}>
             <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "0.75rem" }}>
@@ -221,7 +222,7 @@ export default function CertificationsPage() {
       </section>
 
       {/* Standards Compliance */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
             <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "0.75rem" }}>

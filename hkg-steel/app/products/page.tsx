@@ -42,6 +42,7 @@ export default function ProductsPage() {
     <>
       {/* Page Header */}
       <section
+        className="page-header"
         style={{
           backgroundImage: "url('/images/header.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",
           paddingTop: "calc(70px + 5rem)",
@@ -69,7 +70,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Product 1: Steel Billets */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="two-col-grid">
             {/* Image placeholder */}
@@ -154,7 +155,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Product 2: Deformed Bar */}
-      <section style={{ padding: "6rem 1.5rem", background: "#F5F6FA", borderTop: "1px solid #E8ECEF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#F5F6FA", borderTop: "1px solid #E8ECEF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }} className="two-col-grid">
             <div>
@@ -195,7 +196,7 @@ export default function ProductsPage() {
                 <div style={{ fontSize: "0.75rem", fontWeight: 700, color: "#E74C3C", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
                   Key Performance
                 </div>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
+                <div className="perf-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
                   {[
                     { label: "Min. Yield Strength", value: "500 MPa" },
                     { label: "Available Sizes", value: "8–32 mm" },
@@ -256,7 +257,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Grade Table */}
-      <section style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
             <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "0.75rem" }}>

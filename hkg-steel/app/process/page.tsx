@@ -72,6 +72,7 @@ export default function ProcessPage() {
     <>
       {/* Page Header */}
       <section
+        className="page-header"
         style={{
           backgroundImage: "url('/images/header.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat",
           paddingTop: "calc(70px + 5rem)",
@@ -100,7 +101,7 @@ export default function ProcessPage() {
 
       {/* Process Stats */}
       <section style={{ background: "#FFFFFF", borderBottom: "1px solid #E8ECEF" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
+        <div className="process-stats-grid" style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
           {[
             { value: "400+", unit: "Tonnes/Day", label: "Melting Capacity" },
             { value: "~350", unit: "Tonnes/Day", label: "CCM Billet Output" },
@@ -131,7 +132,7 @@ export default function ProcessPage() {
       </section>
 
       {/* 8-step process */}
-      <section style={{ padding: "6rem 1.5rem", background: "#F5F6FA" }}>
+      <section className="s-pad" style={{ padding: "6rem 1.5rem", background: "#F5F6FA" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "4rem" }}>
             <h2 style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)", fontWeight: 800, color: "#2D3436", letterSpacing: "-0.03em" }}>
@@ -233,6 +234,7 @@ export default function ProcessPage() {
       <section style={{ padding: "0 1.5rem 6rem", background: "#F5F6FA" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div
+            className="wide-banner"
             style={{
               aspectRatio: "21/6",
               borderRadius: "12px",
@@ -252,7 +254,7 @@ export default function ProcessPage() {
       </section>
 
       {/* Quality note */}
-      <section style={{ padding: "5rem 1.5rem", background: "linear-gradient(135deg, #2D3436, #1A2028)" }}>
+      <section className="s-pad" style={{ padding: "5rem 1.5rem", background: "linear-gradient(135deg, #2D3436, #1A2028)" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
           <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#E74C3C", marginBottom: "1rem" }}>
             Quality Control
