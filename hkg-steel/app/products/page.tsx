@@ -242,7 +242,7 @@ export default function ProductsPage() {
               <img
                 src="/images/metal rods.png"
                 alt="HKG Steel Mills — deformed bar (rebar) on rolling mill floor"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", position: "absolute", inset: 0, transform: "scale(1.15)", transformOrigin: "center" }}
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", position: "absolute", inset: 0, transform: "scale(1.4)", transformOrigin: "center" }}
               />
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "rgba(0,0,0,0.65)", padding: "0.6rem 1rem", fontSize: "0.75rem", color: "rgba(255,255,255,0.75)", fontStyle: "italic" }}>
                 HKG Deformed Bar (Rebar) — 8mm to 32mm
