@@ -100,6 +100,7 @@ export default function HomePage() {
         />
 
         <div
+          className="hero-inner"
           style={{
             maxWidth: "860px",
             margin: "0 auto",
@@ -114,6 +115,7 @@ export default function HomePage() {
         >
           {/* Eyebrow pill */}
           <div
+            className="hero-eyebrow"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -132,7 +134,7 @@ export default function HomePage() {
           </div>
 
           {/* Logo — white-text SVG for dark hero background */}
-          <div style={{ marginBottom: "3.5rem", display: "inline-block" }}>
+          <div className="hero-logo-wrap" style={{ marginBottom: "3.5rem", display: "inline-block" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/hkg-logo-white.svg"

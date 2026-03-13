@@ -112,9 +112,18 @@ body {
     gap: 0.25rem !important;
   }
 
-  /* Hero logo: smaller on tiny screens */
+  /* Hero: tighten spacing on mobile */
+  .hero-inner {
+    padding: 4rem 1.25rem 5rem !important;
+  }
+  .hero-eyebrow {
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-logo-wrap {
+    margin-bottom: 2rem !important;
+  }
   .hero-logo {
-    width: clamp(220px, 80vw, 500px) !important;
+    width: clamp(260px, 88vw, 500px) !important;
   }
 
   /* Contact form: reduce padding on mobile */
