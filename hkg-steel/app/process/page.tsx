@@ -100,18 +100,31 @@ export default function ProcessPage() {
 
       {/* Process Stats */}
       <section style={{ background: "#FFFFFF", borderBottom: "1px solid #E8ECEF" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
           {[
             { value: "400+", unit: "Tonnes/Day", label: "Melting Capacity" },
             { value: "~350", unit: "Tonnes/Day", label: "CCM Billet Output" },
             { value: "10,000+", unit: "T/Month", label: "Rolling Capacity" },
             { value: "8", unit: "Steps", label: "Process Stages" },
           ].map((s, i, arr) => (
-            <div key={i} style={{ padding: "2rem 1rem", textAlign: "center", borderRight: i < arr.length - 1 ? "1px solid #E8ECEF" : "none" }}>
-              <div style={{ fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 900, color: "#2D3436", letterSpacing: "-0.03em", lineHeight: 1 }}>
-                {s.value}<span style={{ color: "#E74C3C", fontSize: "0.65em" }}>{s.unit}</span>
+            <div key={i} style={{
+              padding: "2.5rem 1.5rem",
+              textAlign: "center",
+              borderRight: i < arr.length - 1 ? "1px solid #E8ECEF" : "none",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0.25rem",
+            }}>
+              <div style={{ fontSize: "clamp(2rem, 3vw, 2.75rem)", fontWeight: 900, color: "#1A2028", letterSpacing: "-0.04em", lineHeight: 1 }}>
+                {s.value}
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#636E72", marginTop: "0.4rem" }}>{s.label}</div>
+              <div style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#E74C3C" }}>
+                {s.unit}
+              </div>
+              <div style={{ fontSize: "0.8rem", color: "#8A9BA6", marginTop: "0.25rem", letterSpacing: "0.01em" }}>
+                {s.label}
+              </div>
             </div>
           ))}
         </div>
