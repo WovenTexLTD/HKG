@@ -87,7 +87,7 @@ export default function ProductsPage() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/factory-wire-coiling.jpg"
+                src="/images/steel billets (1).png"
                 alt="HKG Steel Mills — wire rod coiling and finishing"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }}
               />
@@ -238,7 +238,7 @@ export default function ProductsPage() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/factory-rebar-floor.jpg"
+                src="/images/metal rods.png"
                 alt="HKG Steel Mills — deformed bar (rebar) on rolling mill floor"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }}
               />

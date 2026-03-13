@@ -103,7 +103,7 @@ export default function HomePage() {
           style={{
             maxWidth: "860px",
             margin: "0 auto",
-            padding: "5rem 1.5rem 6rem",
+            padding: "7rem 1.5rem 8rem",
             width: "100%",
             position: "relative",
             zIndex: 1,
@@ -121,23 +121,23 @@ export default function HomePage() {
               background: "rgba(231,76,60,0.12)",
               border: "1px solid rgba(231,76,60,0.3)",
               borderRadius: "100px",
-              padding: "0.4rem 1.1rem",
-              marginBottom: "2.5rem",
+              padding: "0.5rem 1.4rem",
+              marginBottom: "3rem",
             }}
           >
-            <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#E74C3C", flexShrink: 0 }} />
-            <span style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#E87060" }}>
+            <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#E74C3C", flexShrink: 0 }} />
+            <span style={{ fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#E87060" }}>
               Haseen Kayaba Group · Est. 2010
             </span>
           </div>
 
           {/* Logo — white-text SVG for dark hero background */}
-          <div style={{ marginBottom: "2.75rem", display: "inline-block" }}>
+          <div style={{ marginBottom: "3.5rem", display: "inline-block" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/hkg-logo-white.svg"
               alt="HKG Steel Mills Ltd"
-              style={{ display: "block", height: "auto", width: "clamp(220px, 35vw, 420px)" }}
+              style={{ display: "block", height: "auto", width: "clamp(300px, 48vw, 620px)" }}
             />
           </div>
 
@@ -149,10 +149,10 @@ export default function HomePage() {
           {/* Bengali tagline */}
           <p
             style={{
-              fontSize: "clamp(1.2rem, 2.8vw, 1.65rem)",
+              fontSize: "clamp(1.4rem, 3.2vw, 2rem)",
               color: "#E74C3C",
               fontWeight: 700,
-              marginBottom: "0.5rem",
+              marginBottom: "0.6rem",
               lineHeight: 1.4,
               letterSpacing: "0.01em",
             }}
@@ -161,11 +161,11 @@ export default function HomePage() {
           </p>
           <p
             style={{
-              fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)",
+              fontSize: "clamp(1rem, 2vw, 1.25rem)",
               color: "#8A9BA6",
               fontStyle: "italic",
               fontWeight: 400,
-              marginBottom: "2rem",
+              marginBottom: "2.5rem",
             }}
           >
             "Building Bangladesh with Strength and Reliability"
@@ -174,16 +174,16 @@ export default function HomePage() {
           {/* Description */}
           <p
             style={{
-              fontSize: "1rem",
+              fontSize: "1.0625rem",
               color: "#7A8D99",
-              maxWidth: "580px",
-              lineHeight: 1.8,
-              marginBottom: "2.75rem",
+              maxWidth: "620px",
+              lineHeight: 1.85,
+              marginBottom: "3rem",
             }}
           >
             An established steel manufacturer operating from Sonargaon, Narayangonj. High-grade billets
             and deformed bars with a capacity exceeding{" "}
-            <strong style={{ color: "#B8C5CC", fontWeight: 600 }}>120,000 metric tonnes per year</strong>,
+            <strong style={{ color: "#C8D5DC", fontWeight: 600 }}>120,000 metric tonnes per year</strong>,
             supplying Bangladesh's most critical national infrastructure.
           </p>
 
@@ -197,15 +197,15 @@ export default function HomePage() {
                 gap: "0.5rem",
                 background: "#E74C3C",
                 color: "#FFFFFF",
-                padding: "0.9rem 2.25rem",
+                padding: "1rem 2.5rem",
                 borderRadius: "6px",
                 fontWeight: 700,
-                fontSize: "0.9375rem",
+                fontSize: "1rem",
                 textDecoration: "none",
                 letterSpacing: "0.01em",
               }}
             >
-              View Products <ArrowRight size={16} />
+              View Products <ArrowRight size={17} />
             </Link>
             <Link
               href="/contact"
@@ -215,10 +215,10 @@ export default function HomePage() {
                 gap: "0.5rem",
                 background: "transparent",
                 color: "#FFFFFF",
-                padding: "0.9rem 2.25rem",
+                padding: "1rem 2.5rem",
                 borderRadius: "6px",
                 fontWeight: 600,
-                fontSize: "0.9375rem",
+                fontSize: "1rem",
                 textDecoration: "none",
                 border: "1px solid rgba(255,255,255,0.22)",
               }}
@@ -268,19 +268,13 @@ export default function HomePage() {
                 position: "relative",
               }}
             >
-              <div
-                style={{
-                  fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
-                  fontWeight: 900,
-                  color: "#2D3436",
-                  letterSpacing: "-0.03em",
-                  lineHeight: 1,
-                }}
-              >
+              <div style={{ fontSize: "clamp(1.75rem, 3vw, 2.25rem)", fontWeight: 900, color: "#2D3436", letterSpacing: "-0.03em", lineHeight: 1 }}>
                 {s.value}
-                <span style={{ color: "#E74C3C", fontSize: "0.7em" }}>{s.unit}</span>
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#636E72", marginTop: "0.4rem", fontWeight: 500 }}>
+              <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#E74C3C", marginTop: "0.25rem", letterSpacing: "0.04em", textTransform: "uppercase" }}>
+                {s.unit}
+              </div>
+              <div style={{ fontSize: "0.75rem", color: "#636E72", marginTop: "0.3rem", fontWeight: 500 }}>
                 {s.label}
               </div>
             </div>
