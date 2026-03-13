@@ -123,7 +123,7 @@ export default function HomePage() {
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "clamp(1.5rem, 4vw, 3.5rem)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "clamp(0.75rem, 2vw, 1.25rem)" }}>
               {/* Symbol mark */}
-              <svg width="clamp(104px, 22vw, 120px)" height="clamp(104px, 22vw, 120px)" viewBox="0 0 126 126" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <svg width="clamp(72px, 15vw, 84px)" height="clamp(72px, 15vw, 84px)" viewBox="0 0 126 126" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
                 <g transform="translate(63,63)">
                   <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#E74C3C" transform="rotate(-45)"/>
                   <rect x="-48" y="-19" width="52" height="38" rx="13" fill="#C0392B" transform="rotate(45)"/>
@@ -134,12 +134,12 @@ export default function HomePage() {
                 </g>
               </svg>
               {/* Wordmark */}
-              <div style={{ fontSize: "clamp(4.8rem, 18vw, 5.5rem)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1, fontFamily: "'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif" }}>
+              <div style={{ fontSize: "clamp(3.4rem, 13vw, 4rem)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1, fontFamily: "'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif" }}>
                 <span style={{ color: "#FFFFFF" }}>HKG</span>
                 <span style={{ color: "#E74C3C" }}> STEEL</span>
               </div>
             </div>
-            <div style={{ fontSize: "clamp(1.1rem, 2.8vw, 1.2rem)", color: "rgba(255,255,255,0.45)", letterSpacing: "0.3em", textTransform: "uppercase", marginTop: "0.35rem" }}>
+            <div style={{ fontSize: "clamp(0.75rem, 2vw, 0.85rem)", color: "rgba(255,255,255,0.45)", letterSpacing: "0.3em", textTransform: "uppercase", marginTop: "0.35rem" }}>
               Mills Ltd
             </div>
           </div>
