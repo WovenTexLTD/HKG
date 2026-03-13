@@ -113,26 +113,6 @@ export default function HomePage() {
             alignItems: "center",
           }}
         >
-          {/* Eyebrow pill */}
-          <div
-            className="hero-eyebrow"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
-              background: "rgba(231,76,60,0.12)",
-              border: "1px solid rgba(231,76,60,0.3)",
-              borderRadius: "100px",
-              padding: "0.5rem 1.4rem",
-              marginBottom: "clamp(1rem, 4vw, 3rem)",
-            }}
-          >
-            <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#E74C3C", flexShrink: 0 }} />
-            <span style={{ fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#E87060" }}>
-              Haseen Kayaba Group · Est. 2010
-            </span>
-          </div>
-
           {/* Logo — white-text SVG for dark hero background */}
           <div className="hero-logo-wrap" style={{ marginBottom: "clamp(1.5rem, 4vw, 3.5rem)", display: "inline-block" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -140,7 +120,7 @@ export default function HomePage() {
               src="/images/hkg-logo-white.svg"
               alt="HKG Steel Mills Ltd"
               className="hero-logo"
-              style={{ display: "block", height: "auto", width: "clamp(260px, 85vw, 620px)" }}
+              style={{ display: "block", height: "auto", width: "clamp(300px, 92vw, 700px)" }}
             />
           </div>
 
